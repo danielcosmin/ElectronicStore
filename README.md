@@ -1,1 +1,1 @@
-# The name of Project: Electronic Stor
+# The name of Project: Electronic Store
