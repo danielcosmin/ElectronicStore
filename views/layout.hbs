@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link href="metro-icons.css" rel="stylesheet">
+  </head>
+  <body>
+<!--Header & NAV -->
+<header>
+    <nav>
+        <div data-role="appbar" data-expand-point="md">
+<ul class="app-bar-menu">
+        <li><a href="/">Home</a></li>
+        <li>
+            <a href="#" class="dropdown-toggle">Products</a>
+<ul class="d-menu" data-role="dropdown">
+        <li class="menu-title">House Producs</li>
+        <li><a><span class="mif-home icon"></span>Living Room & Bedroom </a></li>
+        <li class="menu-title">Electronic Products</li>
+        <li><a><span class="mif-mobile icon"></span> Phones</a></li>
+        <li><a><span class="mif-laptop icon"></span> Laptops</a></li>
+        <li><a href="/electronics"><span class="mif-display icon"></span> TV's </a></li>
+        <li><a><span class="mif-cart icon"></span> Cart</a></li>
+</ul>
+        </li>
+        <li><a href="/profile">Profile</a></li>
+    </ul>
+</div>
+  {{!-- <!--Signin button-->
+  <div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div> --}}
+    </nav>
+</header>
+<!--Header & NAV end -->
+<!--Start Body-->
+{{{body}}}
+<!--End body -->
+
+<!--FOOTER -->
+<!-- Footer -->
+<footer class="page-footer  font-medium dark darken-5" style="background-color: rgb(1, 5, 5); ">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5 text-center" style="color: white;" >
+        <div class="flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+   <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: silver;">© 2020 Copyright:
+    <a href="#"> Dream-Team</a>
+  </div>
+  <!-- Copyright -->
+  </div>
+  <!-- Footer Elements -->
+
+</footer>
+<!-- Footer -->
+
+<!--FOOTER END --> 
+
+    <!-- Metro 4 -->
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+function sortList(col, dir) {
+    $('#paintings').data('list').sorting(col,dir,true)
+}
+
+</script>
+  </body>
+</html>
