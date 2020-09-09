@@ -1,5 +1,4 @@
 const express = require('express')
-const { request } = require('http')
 const { response } = require('express')
 const router = express.Router()
 
@@ -17,9 +16,6 @@ router.get('/profile', (request,response)=>{
 router.get('/sign', (request,response)=>{
     response.render('SignUp')
 })
-
-
-
 
 
 module.exports = router
