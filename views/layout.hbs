@@ -4,26 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <!--- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" >
-  <link rel="stylesheet" href="./main.css">
-
-  
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./main.css">
       <!-- Font Awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
-  <!-- Bootstrap core CSS -->
-  
-  
-  <!-- Material Design Bootstrap -->
-  
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-   
-    
-    
 <!-- Styling things(mainly login)-->
-
   </head>
   <body>
 <!--Header & NAV -->
@@ -48,27 +37,32 @@
     </ul>
     <!--Dropdown login -->
 <!-- Button trigger modal -->
-
-<button type="button" class="btn btn-primary" id="myBtn">Primary</button>
-
+<button type="button" class="btn btn-primary" id="myBtn">Sign in</button>
 <!-- Modal -->
-
-
-<!-- The Modal -->
 <div id="myModal" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Modal Header</h2>
+      <h4>Login Form</h4>
     </div>
     <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+      <form>
+    <div class="form-group">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter email"/>
+        <small class="text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter password"/>
+    </div>
+</form>
+      
     </div>
     <div class="modal-footer">
-      <h3>Modal Footer</h3>
+      <button type="button" class="btn btn-dark" id="myBtn">Log in</button>
+<!-- Modal -->
     </div>
   </div>
 
