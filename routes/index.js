@@ -14,6 +14,10 @@ router.get('/electronics', (request,response)=>{
 router.get('/profile', (request,response)=>{
     response.render('profile')
 })
+router.get('/sign', (request,response)=>{
+    response.render('SignUp')
+})
+
 
 
 
