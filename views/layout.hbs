@@ -1,172 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-    <!--- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="./main.css">
-      <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Metro 4 -->
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-<!-- Styling things(mainly login)-->
-  </head>
-  <body>
-<!--Header & NAV -->
-<header>
-    <nav>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!--- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous">
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Metro 4 -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+        <!-- Styling things(mainly login)-->
+    </head>
+    <body>
+        <!--Header & NAV -->
+        <header>
+            <nav>
         <div data-role="appbar" data-expand-point="md">
-<ul class="app-bar-menu">
-        <li><a href="/">Home</a></li>
-        <li>
+            <ul class="app-bar-menu">
+                <li>
+            <a href="/">Home</a>
+                </li>
+                <li>
             <a href="#" class="dropdown-toggle">Products</a>
-<ul class="d-menu" data-role="dropdown">
-        <li class="menu-title">House Producs</li>
-        <li><a><span class="mif-home icon"></span>Living Room & Bedroom </a></li>
-        <li class="menu-title">Electronic Products</li>
-        <li><a><span class="mif-mobile icon"></span> Phones</a></li>
-        <li><a><span class="mif-laptop icon"></span> Laptops</a></li>
-        <li><a href="/electronics"><span class="mif-display icon"></span> TV's </a></li>
-        <li><a><span class="mif-cart icon"></span> Cart</a></li>
-</ul>
-        </li>
-        <li><a href="/profile">Profile</a></li>
-    </ul>
-    <!--Dropdown login -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="myBtn">Sign in</button>
-<!-- Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h4>Login Form</h4>
-    </div>
-    <div class="modal-body">
-      <form>
-    <div class="form-group">
-        <label>Email address</label>
-        <input type="email" placeholder="Enter email"/>
-        <small class="text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-        <label>Password</label>
-        <input type="password" placeholder="Enter password"/>
-    </div>
-</form>
-      
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-dark" id="myBtn">Log in</button>
-<!-- Modal -->
-    </div>
-  </div>
+            <ul class="d-menu" data-role="dropdown">
+                <li class="menu-title">House Producs</li>
+                <li>
+                    <a>
+                        <span class="mif-home icon"></span>Living Room & Bedroom
+                    </a>
+                </li>
+                <li class="menu-title">Electronic Products</li>
+                <li>
+                    <a>
+                        <span class="mif-mobile icon"></span>
+                        Phones</a>
+                </li>
+                <li>
+                    <a>
+                        <span class="mif-laptop icon"></span>
+                        Laptops</a>
+                </li>
+                <li>
+                    <a href="/electronics">
+                        <span class="mif-display icon"></span>
+                        TV's
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="mif-cart icon"></span>
+                        Cart</a>
+                </li>
+            </ul>
+                </li>
+                <li>
+            <a href="/profile">Profile</a>
+                </li>
+            </ul>
+            <!--Dropdown login -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" id="myBtn">Sign in</button>
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h4>Login Form</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" placeholder="Enter email"/>
+                        <small class="text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter password"/>
+                    </div>
+                </form>
 
-</div>
-    <!--END LOGIN -->
-    </nav>
-</header>
-<!--Header & NAV end -->
-<!--Start Body-->
-{{{body}}}
-<!--End body -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" id="myBtn">Log in</button>
+                <!-- Modal -->
+            </div>
+                </div>
 
-<!--FOOTER -->
-<!-- Footer -->
-<footer class="page-footer  font-medium dark darken-5" style="background-color: rgb(1, 5, 5); ">
+            </div>
+            <!--END LOGIN -->
+        </nav>
+            </header>
+            <!--Header & NAV end -->
+            <!--Start Body-->
+            {{{body}}}
+            <!--End body -->
 
-  <!-- Footer Elements -->
-  <div class="container">
+            <!--FOOTER -->
+            <footer
+        class="page-footer  font-medium dark darken-5"
+        style="background-color: rgb(1, 5, 5); ">
 
-    <!-- Grid row-->
-    <div class="row">
+        <!-- Footer Elements -->
+        <div class="container">
+            <!-- Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12 py-5 text-center" style="color: white;">
+            <div class="flex-center">
+                <!-- Facebook -->
+                <a class="fb-ic">
+                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                    <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                    <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                    <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>
+                <!--Pinterest-->
+                <a class="pin-ic">
+                    <i class="fab fa-pinterest fa-lg white-text fa-2x"></i>
+                </a>
+            </div>
+                </div>
+                <!-- Grid column -->
 
-      <!-- Grid column -->
-      <div class="col-md-12 py-5 text-center" style="color: white;" >
-        <div class="flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Pinterest-->
-          <a class="pin-ic">
-            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-          </a>
+            </div>
+            <!-- Grid row-->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="color: silver;">© 2020 Copyright:
+                <a href="#">
+            Dream-Team</a>
+            </div>
+            <!-- Copyright -->
         </div>
-      </div>
-      <!-- Grid column -->
+        <!-- Footer Elements -->
 
-    </div>
-    <!-- Grid row-->
-   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="color: silver;">© 2020 Copyright:
-    <a href="#"> Dream-Team</a>
-  </div>
-  <!-- Copyright -->
-  </div>
-  <!-- Footer Elements -->
+            </footer>
+            <!-- Footer -->
 
-</footer>
-<!-- Footer -->
+            <!--FOOTER END -->
 
-<!--FOOTER END --> 
+            <!-- Metro 4 -->
 
-    <!-- Metro 4 -->
+            <!-- MDB core JavaScript -->
 
-    
+            <!-- JQuery -->
+            <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
 
-     
-  <!-- MDB core JavaScript -->
+            <!-- Bootstrap tooltips -->
+            <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+            <!-- Bootstrap core JavaScript -->
 
-  
+            <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+            <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+            <script src="./script.js"></script>
 
-    <!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+            <script>
+        function sortList(col, dir) {
+            $('#paintings')
+                .data('list')
+                .sorting(col, dir, true)
+            $('#exampleModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the
+                // updating in a callback). Update the modal's content. We'll use jQuery here,
+                // but you could use a data binding library or other methods instead.
+                var modal = $(this)
+                modal
+            .find('.modal-title')
+            .text('New message to ' + recipient)
+                modal
+            .find('.modal-body input')
+            .val(recipient)
+            })
+        }
+            </script>
 
-  <!-- Bootstrap tooltips -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
- <!-- Bootstrap core JavaScript -->
- 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
-<script src="./script.js"></script>
-  
-<script>
-function sortList(col, dir) {
-    $('#paintings').data('list').sorting(col,dir,true)
-    $('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-}
-</script>
-
-
-  </body>
-</html>
+        </body>
+    </html>

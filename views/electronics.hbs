@@ -1,82 +1,97 @@
-
 <!--Header & NAV end -->
 <!--Start Body-->
 <p class="text-center h3 text-light">Sort by</p>
 <div class="d-flex flex-justify-center flex-wrap m-2">
-    <button class="button m-1" onclick="sortList('painting-price','asc')">Price <span class="mif-arrow-up"></span></button>
-    <button class="button m-1" onclick="sortList('painting-price','desc')">Price <span class="mif-arrow-down"></span></button>
-    <button class="button m-1" onclick="sortList('painting-author','asc')">Brand <span class="mif-arrow-up"></span></button>
-    <button class="button m-1" onclick="sortList('painting-author','desc')">Brand <span class="mif-arrow-down"></span></button>
-    <button class="button m-1" onclick="sortList('painting-name','asc')">Rating <span class="mif-arrow-up"></span></button>
-    <button class="button m-1" onclick="sortList('painting-name','desc')">Rating <span class="mif-arrow-down"></span></button>
+    <button class="button m-1" onclick="sortList('painting-price','asc')">Price
+        <span class="mif-arrow-up"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('painting-price','desc')">Price
+        <span class="mif-arrow-down"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('painting-author','asc')">Brand
+        <span class="mif-arrow-up"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('painting-author','desc')">Brand
+        <span class="mif-arrow-down"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('painting-name','asc')">Rating
+        <span class="mif-arrow-up"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('painting-name','desc')">Rating
+        <span class="mif-arrow-down"></span>
+    </button>
 </div>
 
-<ul id="paintings"
+<ul
+    id="paintings"
     data-role="list"
     data-sort-class="painting-price"
     data-sort-dir="desc"
     data-cls-list="unstyled-list row flex-justify-center mt-4"
     data-cls-list-item="cell-sm-6 cell-md-4"
-style="margin: 3px;">
+    style="margin: 3px;">
     <li>
         <figure class="text-center">
             <div class="img-container thumbnail">
-                <img src="https://static.toiimg.com/thumb/msid-71465155,width-640,resizemode-4/71465155.jpg" >
-            </div>
-            <figcaption class="painting-name">4K TV </figcaption>
-            <figcaption class="painting-author text-bold">Samsung TV</figcaption>
-            <figcaption class="painting-price" data-format="money">699£</figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure class="text-center">
-            <div class="img-container thumbnail">
-                <img src="https://www.stuff.tv/sites/stuff.tv/files/styles/flexslider_desktop/public/brands/StuffIndia/OnePlus/U_Series_TV/image_02-07-20_at_6.48_pm.jpg?itok=1oN8CYua" >
-            </div>
-            <figcaption class="painting-name"> FULL HD TV</figcaption>
-            <figcaption class="painting-author text-bold">OnePlusTV</figcaption>
-            <figcaption class="painting-price" data-format="money">899£</figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure class="text-center">
-            <div class="img-container thumbnail">
-                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/19/10/samsung-qe55q80r-4k-tv-indybest.jpg?width=640">
-            </div>
-            <figcaption class="painting-name">SmartTV FullHD</figcaption>
-            <figcaption class="painting-author text-bold">BenQ</figcaption>
-            <figcaption class="painting-price" data-format="money">499£</figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure class="text-center">
-            <div class="img-container thumbnail">
-                <img src="https://www.lifewire.com/thmb/IrXmweWuxdNqfsKWH7UY_ZuJxGk=/640x480/smart/filters:no_upscale()/tcl-fs3850-series-roku-tv-56a4b5ba5f9b58b7d0d869e4.jpg">
-            </div>
-            <figcaption class="painting-name">Another Tv</figcaption>
-            <figcaption class="painting-author text-bold">Some China stuff</figcaption>
-            <figcaption class="painting-price" data-format="money">3Goats</figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure class="text-center">
-            <div class="img-container thumbnail">
-                <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-127370,resizemode-1,msid-52965019/magazines/panache/lg-oled-tv-review-barring-the-price-it-is-one-of-the-best/lg-oled-tv-one-of-the-best-you-can-get-if-you-dont-mind-the-price.jpg" >
-            </div>
-            <figcaption class="painting-name">Oled TV</figcaption>
-            <figcaption class="painting-author text-bold">Sharp</figcaption>
-            <figcaption class="painting-price" data-format="money">599£</figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure class="text-center">
-            <div class="img-container thumbnail">
-                <img src="https://www.hindustantimes.com/rf/image_size_640x362/HT/p2/2015/08/26/Incoming/Pictures/india-has-launched-the-first-4k-oled_dbdf58f4-4bd7-11e5-a8da-005056b4648e.jpg" >
-            </div>
-            <figcaption class="painting-name">4K Curved Oled </figcaption>
-            <figcaption class="painting-author text-bold">LG</figcaption>
-            <figcaption class="painting-price" data-format="money">1099£</figcaption>
-        </figure>
-    </li>
-</ul>
-<!--End body -->
+                <img
+                    src="https://static.toiimg.com/thumb/msid-71465155,width-640,resizemode-4/71465155.jpg"></div>
+                <figcaption class="painting-name">4K TV
+                </figcaption>
+                <figcaption class="painting-author text-bold">Samsung TV</figcaption>
+                <figcaption class="painting-price" data-format="money">699£</figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure class="text-center">
+                <div class="img-container thumbnail">
+                    <img
+                        src="https://www.stuff.tv/sites/stuff.tv/files/styles/flexslider_desktop/public/brands/StuffIndia/OnePlus/U_Series_TV/image_02-07-20_at_6.48_pm.jpg?itok=1oN8CYua"></div>
+                    <figcaption class="painting-name">
+                        FULL HD TV</figcaption>
+                    <figcaption class="painting-author text-bold">OnePlusTV</figcaption>
+                    <figcaption class="painting-price" data-format="money">899£</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="text-center">
+                    <div class="img-container thumbnail">
+                        <img
+                            src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/19/10/samsung-qe55q80r-4k-tv-indybest.jpg?width=640"></div>
+                        <figcaption class="painting-name">SmartTV FullHD</figcaption>
+                        <figcaption class="painting-author text-bold">BenQ</figcaption>
+                        <figcaption class="painting-price" data-format="money">499£</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="text-center">
+                        <div class="img-container thumbnail">
+                            <img
+                                src="https://www.lifewire.com/thmb/IrXmweWuxdNqfsKWH7UY_ZuJxGk=/640x480/smart/filters:no_upscale()/tcl-fs3850-series-roku-tv-56a4b5ba5f9b58b7d0d869e4.jpg"></div>
+                            <figcaption class="painting-name">Another Tv</figcaption>
+                            <figcaption class="painting-author text-bold">Some China stuff</figcaption>
+                            <figcaption class="painting-price" data-format="money">3Goats</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="text-center">
+                            <div class="img-container thumbnail">
+                                <img
+                                    src="https://img.etimg.com/thumb/width-640,height-480,imgsize-127370,resizemode-1,msid-52965019/magazines/panache/lg-oled-tv-review-barring-the-price-it-is-one-of-the-best/lg-oled-tv-one-of-the-best-you-can-get-if-you-dont-mind-the-price.jpg"></div>
+                                <figcaption class="painting-name">Oled TV</figcaption>
+                                <figcaption class="painting-author text-bold">Sharp</figcaption>
+                                <figcaption class="painting-price" data-format="money">599£</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="text-center">
+                                <div class="img-container thumbnail">
+                                    <img
+                                        src="https://www.hindustantimes.com/rf/image_size_640x362/HT/p2/2015/08/26/Incoming/Pictures/india-has-launched-the-first-4k-oled_dbdf58f4-4bd7-11e5-a8da-005056b4648e.jpg"></div>
+                                    <figcaption class="painting-name">4K Curved Oled
+                                    </figcaption>
+                                    <figcaption class="painting-author text-bold">LG</figcaption>
+                                    <figcaption class="painting-price" data-format="money">1099£</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <!--End body -->

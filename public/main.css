@@ -21,7 +21,6 @@
     /* Black w/ opacity */
 }
 
-
 /* Modal Content */
 
 .modal-content {
@@ -35,34 +34,32 @@
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
-
 
 /* Add Animation */
 
 @-webkit-keyframes animatetop {
     from {
         top: -300px;
-        opacity: 0
+        opacity: 0;
     }
     to {
         top: 0;
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes animatetop {
     from {
         top: -300px;
-        opacity: 0
+        opacity: 0;
     }
     to {
         top: 0;
-        opacity: 1
+        opacity: 1;
     }
 }
-
 
 /* The Close Button */
 
@@ -75,8 +72,8 @@
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:focus,
+.close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
