@@ -1,0 +1,24 @@
+#saveToFavBtn{
+    background-color:#FEBD69;
+    color: black;
+}
+#saveToFavTxT {
+    padding-left: 10px;color: black;
+    text-shadow: 1px 1.5px rgba(255, 255, 255, 0.883);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+
+
+#addToCartBtn{
+    background-color:#FEBD69;
+    color: black;
+}
+#addToCartTxT{
+    padding-left: 10px;color: black;
+    text-shadow: 1px 1.5px rgba(255, 255, 255, 0.883);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.9em;
+    
+}

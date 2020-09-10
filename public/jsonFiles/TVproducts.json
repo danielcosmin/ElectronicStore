@@ -1,0 +1,39 @@
+[
+    {
+        "image": "/img/tv/71465155.jpg" ,
+        "product-name" : "FullHD TV" ,
+        "product-brand" : "Samsung" ,
+        "price" : "399£"
+    },
+    {
+        "image": "/img/tv/image_02-07-20_at_6.48_pm.jpg" ,
+        "product-name" : "FullHD Smart TV" ,
+        "product-brand" : "LG" ,
+        "price" : "499£"
+    },
+    {
+        "image": "/img/tv/india-has-launched-the-first-4k-oled_dbdf58f4-4bd7-11e5-a8da-005056b4648e.jpg" ,
+        "product-name" : "OLED 4k Smart TV" ,
+        "product-brand" : "Sharp" ,
+        "price" : "699£"
+    },
+    {
+        "image": "/img/tv/lg-oled-tv-one-of-the-best-you-can-get-if-you-dont-mind-the-price.jpg" ,
+        "product-name" : "4k Smart TV" ,
+        "product-brand" : "Sony" ,
+        "price" : "499£"
+    },
+    {
+        "image": "/img/tv/samsung-qe55q80r-4k-tv-indybest.jpg" ,
+        "product-name" : "FULL HD LED TV" ,
+        "product-brand" : "Samsung" ,
+        "price" : "399£"
+    },
+    {
+        "image": "/img/tv/tcl-fs3850-series-roku-tv-56a4b5ba5f9b58b7d0d869e4.jpg" ,
+        "product-name" : "4K Curved TV" ,
+        "product-brand" : "Samsung" ,
+        "price" : "799£"
+    }
+    
+]

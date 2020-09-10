@@ -1,0 +1,39 @@
+[
+    {
+        "image": "/img/phones/phone1.jpg" ,
+        "product-name" : "iPhone XS Max" ,
+        "product-brand" : "Apple" ,
+        "price" : "1099£"
+    },
+    {
+        "image": "/img/phones/phone2.jpg" ,
+        "product-name" : "OnePlus 7" ,
+        "product-brand" : "OnePlus" ,
+        "price" : "499£"
+    },
+    {
+        "image": "/img/phones/phone3.jpg" ,
+        "product-name" : "T116 - A phone for melancholics" ,
+        "product-brand" : "SonnyEricsson" ,
+        "price" : "229£"
+    },
+    {
+        "image": "/img/phones/phone4.jpeg" ,
+        "product-name" : "iPhone 8" ,
+        "product-brand" : "Apple" ,
+        "price" : "599£"
+    },
+    {
+        "image": "/img/phones/phone5.jpg" ,
+        "product-name" : "Nokia 8 Plus" ,
+        "product-brand" : "Nokia" ,
+        "price" : "499£"
+    },
+    {
+        "image": "/img/phones/phone6.jpg" ,
+        "product-name" : "Nokia 8" ,
+        "product-brand" : "Nokia" ,
+        "price" : "399£"
+    }
+    
+]

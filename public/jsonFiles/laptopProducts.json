@@ -1,0 +1,39 @@
+[
+    {
+        "image": "/img/laptop/laptop1.jpg" ,
+        "product-name" : "Gamming Laptop" ,
+        "product-brand" : "Acer" ,
+        "price" : "699£"
+    },
+    {
+        "image": "/img/laptop/laptop2.jpg" ,
+        "product-name" : "Office Laptop" ,
+        "product-brand" : "Asus" ,
+        "price" : "499£"
+    },
+    {
+        "image": "/img/laptop/laptop3.jpg" ,
+        "product-name" : "Inspirion 15-3000" ,
+        "product-brand" : "DELL" ,
+        "price" : "299£"
+    },
+    {
+        "image": "/img/laptop/laptop4.jpeg" ,
+        "product-name" : "Gamming Laptop 4K " ,
+        "product-brand" : "AlienWAre" ,
+        "price" : "899£"
+    },
+    {
+        "image": "/img/laptop/laptop5.jpg" ,
+        "product-name" : "Macbook" ,
+        "product-brand" : "Apple" ,
+        "price" : "999£"
+    },
+    {
+        "image": "/img/laptop/laptop6.png" ,
+        "product-name" : "Daily use laptop" ,
+        "product-brand" : "HP" ,
+        "price" : "499£"
+    }
+    
+]

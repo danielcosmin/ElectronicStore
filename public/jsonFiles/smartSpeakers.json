@@ -1,0 +1,75 @@
+[
+    {
+        "image": "/img/smart_speakers/speaker1.jpeg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Apple" ,
+        "price" : "499£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker2.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Google" ,
+        "price" : "299£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker3.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "LG" ,
+        "price" : "299£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker4.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Amazon" ,
+        "price" : "199£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker5.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Amazon" ,
+        "price" : "189£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker6.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Amazon" ,
+        "price" : "160£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker7.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Sonos" ,
+        "price" : "195£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker8.jpeg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Sonos" ,
+        "price" : "132£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker9.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Apple" ,
+        "price" : "399£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker10.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Google" ,
+        "price" : "179£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker11.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Facebook" ,
+        "price" : "115£"
+    },
+    {
+        "image": "/img/smart_speakers/speaker12.jpg" ,
+        "product-name" : "Bluetooth Smart Speaker" ,
+        "product-brand" : "Google" ,
+        "price" : "99£"
+    }
+    
+]

@@ -1,0 +1,46 @@
+<!--Header & NAV end -->
+<!--Start Body-->
+<p class="text-center h3 text-light">Sort by</p>
+<div class="d-flex flex-justify-center flex-wrap m-2">
+    <button class="button m-1" onclick="sortList('product-price','asc')">Price
+        <span class="mif-arrow-up"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('product-price','desc')">Price
+        <span class="mif-arrow-down"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('product-brand','asc')">Brand
+        <span class="mif-arrow-up"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('product-brand','desc')">Brand
+        <span class="mif-arrow-down"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('product-name','asc')">Rating
+        <span class="mif-arrow-up"></span>
+    </button>
+    <button class="button m-1" onclick="sortList('product-name','desc')">Rating
+        <span class="mif-arrow-down"></span>
+    </button>
+</div>
+
+<ul
+    id="product"
+    data-role="list"
+    data-sort-class="product-price"
+    data-sort-dir="desc"
+    data-cls-list="unstyled-list row flex-justify-center mt-4"
+    data-cls-list-item="cell-sm-6 cell-md-4"
+    style="margin: 3px;">
+    {{#each jsonObject}}
+        <li>
+            <figure class="text-center">
+                <div class="img-container thumbnail">
+                    <img src="{{image}}"></div>
+                <figcaption class="product-name">{{product-name}}
+                </figcaption>
+                <figcaption class="product-brand text-bold">{{product-brand}}</figcaption>
+                <figcaption class="product-price" data-format="money">{{price}}</figcaption>
+            </figure>
+        </li>
+    {{/each}}
+</ul>
+<!--End body -->

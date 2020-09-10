@@ -95,3 +95,8 @@
     background-color: #0d130d94;
     color: white;
 }
+
+#registerBtn {
+    text-decoration: none;
+    color:white;
+}
