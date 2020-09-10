@@ -2,14 +2,13 @@
     background-color:#FEBD69;
     color: black;
 }
+
 #saveToFavTxT {
     padding-left: 10px;color: black;
     text-shadow: 1px 1.5px rgba(255, 255, 255, 0.883);
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 0.9em;
 }
-
-
 
 #addToCartBtn{
     background-color:#FEBD69;
@@ -20,5 +19,17 @@
     text-shadow: 1px 1.5px rgba(255, 255, 255, 0.883);
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 0.9em;
-    
+}
+
+#shareBtn{
+    background-color:#FEBD69;
+    padding-left: 5px;
+    color: black;
+}
+
+#shareTxT {
+    color: black;
+    text-shadow: 1px 1.5px rgba(255, 255, 255, 0.883);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 0.9em;
 }
