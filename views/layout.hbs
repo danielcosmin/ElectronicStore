@@ -73,48 +73,49 @@
                 </li>
             </ul>
         <!-- SignIN and REgister Button --->
-           <div>
+          <div>
                 <!--Dropdown login -->
-            <!-- Button trigger modal -->
+                <!-- Button trigger modal -->
             <button type="button" class="btn" id="myBtn">Sign in</button>
             <!-- Modal -->
             <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h4>Login Form</h4>
-            </div>
-            <div class="modal-body">
-                <form action="/" method="POST" >
-                    <div class="form-group">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h4>Login Form</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/" method="POST" >
+                      <div class="form-group">
                         <label>Email address</label>
                         <input type="email" name="email_from_user" placeholder="Enter email"/>
                         <small class="text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
+                      </div>
+                      <div class="form-group">
                         <label>Password</label>
                         <input type="password" name="password_from_user" placeholder="Enter password"/>
-                    </div>
-                </form>
-
+                      </div>
+                
+                      
+                      
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-dark" id="myBtn">Log in</button>
+                        <!-- Modal -->
+                      </div>
+                    </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-dark" id="myBtn">Log in</button>
-                <!-- Modal -->
-            </div>
-                </div>
-
-            </div>
+          </div>
+          </div>
             <!--END LOGIN -->
             <!-- Register Button -->
-        <button type="button" class="btn" id="buttonForRegister"><a id="registerBtn" href="/sign"> Register</a></button>
+          <button type="button" class="btn" id="buttonForRegister"><a id="registerBtn" href="/sign"> Register</a></button>
             <!-- End Register Button -->
-           </div>
-        </nav>
+        </div>
+      </nav>
             </header>
             <!--Header & NAV end -->
-
+          <div id="message"></div>
 
             <!--Start Body-->
             {{{body}}}
