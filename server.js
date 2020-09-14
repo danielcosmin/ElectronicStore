@@ -49,6 +49,7 @@ app.post('/', (request, response) => {
             break;
         }
     }
-    response.render('index')
+    let message = '<div class="alert alert-danger" role="alert">wrong Email or password</div>';
+    response.render('', { message })
         // message.innerHTML = '<div class="alert alert-danger" role="alert" hidden>wrong Email or password</div></div>';
 })
