@@ -1,16 +1,17 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 const PORT = 6500
-const indexRouter = require('./routes/index')
-const fs = require('fs')
-const bodyParser = require('body-parser')
-const { request } = require('http')
-const { response } = require('express')
+const indexRouter = require('./routes/index');
+const fs = require('fs');
+const bodyParser = require('body-parser');
+const { request } = require('http');
+const { response } = require('express');
+const fetch = require('node-fetch');
 
 
 
-let userJSON_data = fs.readFileSync('public/jsonFiles/userData.json', { root: 'public' })
-let userObject_data = JSON.parse(userJSON_data)
+let userJSON_data = fs.readFileSync('public/jsonFiles/userData.json', { root: 'public' });
+let userObject_data = JSON.parse(userJSON_data);
 
 // setup body-parser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -39,6 +40,19 @@ app.post('/sign', (request, response) => {
     fs.writeFileSync(__dirname + '/public/jsonFiles/userData.json', JSON.stringify(userObject_data))
     response.render('index')
 })
+app.get('/user', (req, res) => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(resp => resp.json())
+        .then(json => res.render('api', { json }));
+})
+
+app.get('/user/:id', (req, res) => {
+    let id = req.params.id;
+    //console.log(req.params.id);
+    fetch('https://jsonplaceholder.typicode.com/users/' + id)
+        .then(resp => resp.json())
+        .then(json => res.render('user', { json }));
+})
 
 app.post('/', (request, response) => {
     let userData = request.body;
@@ -49,6 +63,7 @@ app.post('/', (request, response) => {
             break;
         }
     }
+
     let message = '<div class="alert alert-danger" role="alert">wrong Email or password</div>';
     response.render('', { message })
         // message.innerHTML = '<div class="alert alert-danger" role="alert" hidden>wrong Email or password</div></div>';
