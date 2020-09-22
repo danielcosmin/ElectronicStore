@@ -10,7 +10,7 @@ const fetch = require('node-fetch');
 const mongoose = require('mongoose');
 const User = require('./models/userModel');
 
-mongoose.connect('mongodb+srv://mongoDBadmin:mongodbadmin123@cluster1.ookpy.mongodb.net/Electronic_Store', { useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect('mongodb+srv://mongoDBadmin:<password>cluster1.ookpy.mongodb.net/Electronic_Store', { useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => {
         console.log('Your MongoDB is connected......')
     })
