@@ -79,16 +79,19 @@ router.get('/signin', (request, response) => {
 router.post('/signin', (request, response) => {
     let userData = request.body;
     // console.log(userData);
-    let dbuser
-    Users.find((err, data) => {
+
+    Users.findOne({ user_email: userData.email_from_user }, (err, data) => {
         if (err) throw err;
         console.log(data)
+        console.log(userData)
+        if (userData.email_from_user == data.user_email && userData.password_from_user == data.user_password) {
+            response.render('profile');
+
+        } else {
+            response.send('wrong info')
+        }
     })
 
-    // if (userData.user_email == dbuser.user_email && userData.user_password == dbuser.user_password) {
-    //     response.render('profile');
-
-    // }
 
 
     // let message = '<div class="alert alert-danger" role="alert">wrong Email or password</div>';
