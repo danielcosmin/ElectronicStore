@@ -1,3 +1,6 @@
+<!--My CSS -->
+<link rel="stylesheet" href="/css/layout.css">
+
 <!--Header & NAV end -->
 <!--Start Body-->
 <p class="text-center h3 text-light">Sort by</p>
@@ -34,12 +37,24 @@
         <li>
             <figure class="text-center">
                 <div class="img-container thumbnail">
-                    <img src="{{image}}"></div>
+                    <img src={{image}}></div>
                 <figcaption class="product-name">{{product-name}}
                 </figcaption>
                 <figcaption class="product-brand text-bold">{{product-brand}}</figcaption>
                 <figcaption class="product-price" data-format="money">{{price}}</figcaption>
             </figure>
+            <div>
+               <!-- Save to favorites -->
+               <button class="button mif-favorite" id="saveToFavBtn"><span id="saveToFavTxT">Add to whistlist</span></button>
+
+               <!--Share it Button -->
+               <button class="image-button mif-share icon" id="shareBtn"></span>
+                <span class="caption" id="shareTxT">Share it</span>
+            </button>
+            <!--Add to Cart button -->
+                <button id="addToCartBtn" class="button primary rounded mif-add-shopping-cart"><span id="addToCartTxT">Add to cart</span>
+            </button>
+           </div>
         </li>
     {{/each}}
 </ul>

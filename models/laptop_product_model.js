@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-    //Brings the general model 
-const TV_product_Schema = new Schema({
+    //
+const Laptop_product_Schema = new Schema({
     product_id: String,
     product_name: String,
     brand_name: String,
@@ -10,9 +10,10 @@ const TV_product_Schema = new Schema({
     product_price: String,
     product_image: String,
     created: Date
-    });
+})
 
+    //creating model
+const Laptop_Products = mongoose.model('Laptop_Product', Laptop_product_Schema)
 
-const TV_Products = mongoose.model('TV_Product', TV_product_Schema)
-//exports
-module.exports = TV_Products
+    //exporting model
+module.exports = Laptop_Products
