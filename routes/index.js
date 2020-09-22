@@ -89,10 +89,10 @@ router.post('/signin', (request, response) => {
         if (err) throw err;
         console.log(data)
         console.log(userData)
-        if (userData.email_from_user == data.user_email && userData.password_from_user == data.user_password) {
-            response.redirect('/profile');
-
-        } else {
+        if (data != null && userData.email_from_user == data.user_email && userData.password_from_user == data.user_password) {
+                response.redirect('/profile');
+            } 
+        else {
             let message = '<div class="alert alert-danger" role="alert">wrong Email or password</div>';
             response.render('signin', { message })
                 // response.send('wrong info')
