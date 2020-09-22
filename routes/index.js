@@ -45,6 +45,11 @@ router.get('/speakers', (request, response) => {
     response.render('smart_speakers_products', { jsonObject })
 })
 
+    //Empty Cart
+router.get('/empty_cart', (request, response) => {
+    response.render('empty_cart')
+})
+
 //Profile
 router.get('/profile', (request, response) => {
     response.render('profile')
