@@ -39,30 +39,7 @@ app.listen(PORT, () => {
 
 //10.09.2020 -- Post data and saving to a JSON file
 
-app.post('/sign', (request, response) => {
-    let userId = Math.floor(Math.random() * 100);
-    userInfo = request.body;
-    // let data_from_user = request.body
-    //     //console.log(userObject_data)
-    // userObject_data.push(data_from_user)
-    //     //console.log(userObject_data)
-    // fs.writeFileSync(__dirname + '/public/jsonFiles/userData.json', JSON.stringify(userObject_data))
-    // response.render('index')
-    let newUser = new User({ userId, userInfo }
-        //     {
-        //     id: userId,
-        //     user_first_name: request.body.user_first_name,
-        //     user_last_name: request.body.user_last_name,
-        //     user_email: request.body.user_email,
-        //     user_password: request.body.user_password,
-        //     user_age: request.body.user_age
-        //         // created: Date.now()
-        // }
-    );
-    newUser.save(() => {
-        response.render('signin')
-    });
-})
+
 app.get('/user', (req, res) => {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(resp => resp.json())
@@ -75,19 +52,4 @@ app.get('/user/:id', (req, res) => {
     fetch('https://jsonplaceholder.typicode.com/users/' + id)
         .then(resp => resp.json())
         .then(json => res.render('user', { json }));
-})
-
-app.post('/', (request, response) => {
-    let userData = request.body;
-    // console.log(userData);
-    for (let i of userObject_data) {
-        if (userData.email_from_user == i.user_email && userData.password_from_user == i.user_password) {
-            response.render('profile');
-            break;
-        }
-    }
-
-    let message = '<div class="alert alert-danger" role="alert">wrong Email or password</div>';
-    response.render('', { message })
-        // message.innerHTML = '<div class="alert alert-danger" role="alert" hidden>wrong Email or password</div></div>';
 })
