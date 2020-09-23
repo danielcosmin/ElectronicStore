@@ -19,7 +19,7 @@ router.get('/tv', (request, response) => {
     let jsonData = fs.readFileSync('public/jsonFiles/TVproducts.json', { root: 'public' })
     let jsonObject = JSON.parse(jsonData)
         //console.log(jsonObject)
-    response.render('tv_products', { jsonObject })
+    response.render('tv_products', { jsonObject, userLogin })
 })
 
 //Laptops
@@ -27,7 +27,7 @@ router.get('/laptops', (request, response) => {
     let jsonData = fs.readFileSync('public/jsonFiles/laptopProducts.json', { root: 'public' })
     let jsonObject = JSON.parse(jsonData)
         //console.log(jsonObject)
-    response.render('laptop_products', { jsonObject })
+    response.render('laptop_products', { jsonObject, userLogin })
 })
 
 //Mobile Phones
@@ -35,29 +35,29 @@ router.get('/mobile', (request, response) => {
         let jsonData = fs.readFileSync('public/jsonFiles/mobileProducts.json', { root: 'public' })
         let jsonObject = JSON.parse(jsonData)
             //console.log(jsonObject)
-        response.render('phone_products', { jsonObject })
+        response.render('phone_products', { jsonObject, userLogin })
     })
     //Smart Speakers
 router.get('/speakers', (request, response) => {
     let jsonData = fs.readFileSync('public/jsonFiles/smartSpeakers.json', { root: 'public' })
     let jsonObject = JSON.parse(jsonData)
         //console.log(jsonObject)
-    response.render('smart_speakers_products', { jsonObject })
+    response.render('smart_speakers_products', { jsonObject, userLogin })
 })
 
-    //Empty Cart
+//Empty Cart
 router.get('/empty_cart', (request, response) => {
-    response.render('empty_cart')
+    response.render('empty_cart', { userLogin })
 })
 
 //Profile
 router.get('/profile', (request, response) => {
-    response.render('profile')
+    response.render('profile', { userLogin })
 })
 
 //Registration
 router.get('/sign', (request, response) => {
-    response.render('SignUp')
+    response.render('SignUp', { userLogin })
 })
 router.post('/sign', (request, response) => {
     let userId = Math.floor(Math.random() * 100);
@@ -79,7 +79,7 @@ router.post('/sign', (request, response) => {
 
 // login
 router.get('/signin', (request, response) => {
-    response.render('signin')
+    response.render('signin', { userLogin })
 })
 router.post('/signin', (request, response) => {
     let userData = request.body;
@@ -89,8 +89,10 @@ router.post('/signin', (request, response) => {
         if (err) throw err;
         console.log(data)
         console.log(userData)
-        if (userData.email_from_user == data.user_email && userData.password_from_user == data.user_password) {
+        if (data != null && userData.email_from_user == data.user_email && userData.password_from_user == data.user_password) {
+            userLogin = 'logedin'
             response.redirect('/profile');
+
 
         } else {
             let message = '<div class="alert alert-danger" role="alert">wrong Email or password</div>';
@@ -108,7 +110,7 @@ router.post('/signin', (request, response) => {
 
 //ADD product info 
 router.get('/addProducts', (request, response) => {
-    response.render('add_new_product')
+    response.render('add_new_product', { userLogin })
 })
 
 
@@ -121,6 +123,11 @@ router.post('/addProducts', (request, response) => {
     newProduct.save(() => {
         response.json('Data saved...')
     })
+})
+
+router.get('/signout', (request, response) => {
+    userLogin = null;
+    response.redirect('/')
 })
 
 // router.get('/test', (request,response)=>{
