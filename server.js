@@ -10,13 +10,15 @@ const fetch = require('node-fetch');
 const mongoose = require('mongoose');
 const User = require('./models/userModel');
 const session = require('express-session');
+const DB = require('./models/DB');
 app.use(session({ secret: 'try it' }))
 
-mongoose.connect('mongodb+srv://admin:M0h@mmed@mohammad.v7aku.mongodb.net/test', { useUnifiedTopology: true, useNewUrlParser: true })
-    .then(() => {
-        console.log('Your MongoDB is connected......')
-    })
-    .catch(err => console.log('Your ERROR is : ' + err));
+
+// mongoose.connect('mongodb+srv://admin:M0h@mmed@mohammad.v7aku.mongodb.net/test', { useUnifiedTopology: true, useNewUrlParser: true })
+//     .then(() => {
+//         console.log('Your MongoDB is connected......')
+//     })
+//     .catch(err => console.log('Your ERROR is : ' + err));
 
 
 let userJSON_data = fs.readFileSync('public/jsonFiles/userData.json', { root: 'public' });
